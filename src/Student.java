@@ -4,11 +4,13 @@
 import java.util.List;
 public class Student extends Person {
     String major;
+    boolean fulltime;
     List<Course> courseList;
 
-    public Student(String name, String emailAddress, String major) {
+    public Student(String name, String emailAddress, String major, boolean fulltime) {
         super(name, emailAddress);
         this.major = major;
+        this.fulltime=fulltime;
     }
 
     public String toString() {
